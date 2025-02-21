@@ -6,8 +6,9 @@ import { AuthContext } from "../authentication/AuthProvider";
 const Navbar = () => {
     const {user} = useContext(AuthContext)
     const links = <>
-        <li><NavLink to='/home/addTask'>Add Task</NavLink></li>
-        <li><NavLink to='/home/manageTask'>Manage Your Task</NavLink></li>
+        <li><Link to='/home'>Home</Link></li>
+        <li><Link to='/home/addTask'>Add Task</Link></li>
+        <li><Link to='/home/manageTask'>Manage Your Task</Link></li>
     </>
     return (
         <div>

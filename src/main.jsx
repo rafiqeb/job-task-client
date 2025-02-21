@@ -21,6 +21,7 @@ import {
   QueryClientProvider,
 } from '@tanstack/react-query'
 import UpdateTask from './components/UpdateTask';
+import DragAndDrop from './components/DragAndDrop';
 
 const queryClient = new QueryClient()
 
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
     path: 'home',
     element: <Home></Home>,
     children: [
+      {
+        path: '',
+        element: <DragAndDrop></DragAndDrop>
+      },
       {
         path: 'addTask',
         element: <AddTask></AddTask>
