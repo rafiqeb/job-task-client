@@ -1,8 +1,35 @@
-# React + Vite
+# Task Management Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a Task Management Application where users can efficiently manage their tasks by adding, editing, deleting, and reordering them using a drag-and-drop interface. Tasks are categorized into three sections: To-Do, In Progress, and Done. All changes are instantly saved to the database to maintain persistence.
+ 
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##   Dependencies :
+
+- React.
+- Firebase.
+- Tailwind CSS.
+- Mongodb.
+- Node.js
+- React beautiful dnd.
+
+##   Installation steps :
+
+- cd your folder Frontend or Backend
+- npm install
+- npm run dev
+- Configure Firebase Authentication.
+- Update .env file with Firebase credentials.
+
+##   Technologies Used :
+
+- React.js
+- Node.js
+- Java script
+- Firebase authentication
+- Mongodb
+- Tailwind CSS
+- React beautiful dnd
+
+## 🔗 Live links
+[Assignment-link](https://task-project-a0745.web.app/)
