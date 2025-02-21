@@ -75,6 +75,8 @@ const DragAndDrop = () => {
                                 draggable
                                 className="bg-gray-100 p-2 my-2 rounded cursor-move">
                                 <p>{task.title}</p>
+                                <p>{task.description}</p>
+                                <p>{task.date}</p>
                             </div>
                         ))
                     ) : (
