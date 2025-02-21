@@ -13,7 +13,6 @@ import MainLayout from './components/MainLayout';
 import Login from './authentication/Login';
 import AddTask from './components/AddTask';
 import toast, { Toaster } from 'react-hot-toast';
-import ManageTask from './components/ManageTask';
 
 
 import {
@@ -22,6 +21,7 @@ import {
 } from '@tanstack/react-query'
 import UpdateTask from './components/UpdateTask';
 import DragAndDrop from './components/DragAndDrop';
+import PrivateRoute from './components/PrivateRoute';
 
 const queryClient = new QueryClient()
 
@@ -39,7 +39,7 @@ const router = createBrowserRouter([
   },
   {
     path: 'home',
-    element: <Home></Home>,
+    element: <PrivateRoute><Home></Home></PrivateRoute>,
     children: [
       {
         path: '',
@@ -48,10 +48,6 @@ const router = createBrowserRouter([
       {
         path: 'addTask',
         element: <AddTask></AddTask>
-      },
-      {
-        path: 'manageTask',
-        element: <ManageTask></ManageTask>
       },
       {
         path: 'update/:id',

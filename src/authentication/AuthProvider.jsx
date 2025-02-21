@@ -23,11 +23,9 @@ const AuthProvider = ({ children }) => {
     const unsubscribe = onAuthStateChanged(auth, currentUser => {
       console.log(currentUser)
       setUser(currentUser)
-      setLoading(false)
+      setLoading(false);
     })
-    return () => {
-      return unsubscribe()
-    }
+    return () => unsubscribe()
   }, [])
 
   const authInfo = {
@@ -36,9 +34,7 @@ const AuthProvider = ({ children }) => {
 
   return (
     <AuthContext.Provider value={authInfo}>
-      {loading ? <div className="flex justify-center items-center min-h-screen">
-        <span className="loading loading-spinner loading-lg"></span>
-      </div> : children}
+      {children}
     </AuthContext.Provider>
   );
 };

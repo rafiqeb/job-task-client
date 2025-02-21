@@ -26,7 +26,7 @@ const UpdateTask = () => {
                 timer: 2000
             });
             form.reset()
-            navigate('/home/manageTask')
+            navigate('/home')
         }
     }
     return (

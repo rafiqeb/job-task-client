@@ -30,6 +30,9 @@ const Login = () => {
 
     return (
         <div>
+            <div className="py-10">
+                <h2 className="text-3xl font-bold text-center mt-14">Sign In With Google</h2>
+            </div>
             <div className="max-w-lg mx-auto bg-base-200 p-10 shadow-xl rounded-xl">
                 <form>
                     <button type="button"
